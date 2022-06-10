@@ -6,7 +6,8 @@ public class Solution {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        String s = scan.nextLine();
+        scan.useDelimiter("\\Z");
+        String s = scan.nextLine().trim();
         if (s.length() > 0) {
             String[] t = s.split("[!,?._'@\\s]+");
             System.out.println(t.length);
