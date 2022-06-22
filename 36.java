@@ -1,33 +1,24 @@
-// https://www.hackerrank.com/challenges/java-list/problem
+// https://www.hackerrank.com/challenges/phone-book/problem
 
-import java.io.*;
+//Complete this code or write your own from scratch
 import java.util.*;
+import java.io.*;
 
-public class Solution {
-    public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        int n = in.nextInt();
-        List<Integer> arr = new ArrayList<>();
-        for (int i=0; i<n; i++) { arr.add(in.nextInt()); }
-
-        int q = in.nextInt();
-        while (q-- > 0) {
-            switch(in.next()) {
-                case "Insert":
-                    arr.add(in.nextInt(), in.nextInt());
-                    break;
-                
-                case "Delete":
-                    arr.remove(in.nextInt());
-                    break;
-                
-                default:
-                    System.out.println("Invalid operation.");
-                    System.exit(-1);
-                    break;
-            }
-        }
-        while(!arr.isEmpty()) { System.out.print(arr.remove(0) + " "); }
-        in.close();
-    }
+class Solution{
+	public static void main(String []argh)
+	{
+		Scanner in = new Scanner(System.in);
+		int n=in.nextInt();
+		in.nextLine();
+		for(int i=0;i<n;i++)
+		{
+			String name=in.nextLine();
+			int phone=in.nextInt();
+			in.nextLine();
+		}
+		while(in.hasNext())
+		{
+			String s=in.nextLine();
+		}
+	}
 }
