@@ -1,6 +1,5 @@
 // https://www.hackerrank.com/challenges/phone-book/problem
 
-//Complete this code or write your own from scratch
 import java.util.*;
 import java.io.*;
 
