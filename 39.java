@@ -1,27 +1,27 @@
 // https://www.hackerrank.com/challenges/java-generics/problem
 
-import java.io.*;
-import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
+import java.io.IOException;
+import java.lang.reflect.Method;
+
+class Printer {
+    public <T> void printArray(T[] arr) {
+        for(T z : arr) System.out.println(z);
+    }
+}
 
 public class Solution {
-    public static void main(String[] args) {
-        Scanner s = new Scanner(System.in);
-        int t = s.nextInt();
-        String [] pair_left = new String[t];
-        String [] pair_right = new String[t];
-        
-        for (int i = 0; i < t; i++) {
-            pair_left[i] = s.next();
-            pair_right[i] = s.next();
-        }
+    public static void main( String args[] ) {
+        Printer myPrinter = new Printer();
+        Integer[] intArray = { 1, 2, 3 };
+        String[] stringArray = {"Hello", "World"};
+        myPrinter.printArray(intArray);
+        myPrinter.printArray(stringArray);
+        int count = 0;
 
-        HashSet<String> h = new HashSet<String>(t);
-        for(int i = 0; i < t; i++) {
-            h.add("(" + pair_left[i] + ", " + pair_right[i] + ")");
-            System.out.println(h.size());        
+        for(Method method : Printer.class.getDeclaredMethods()) {
+            String name = method.getName();
+            if(name.equals("printArray")) count++;
         }
+        if(count > 1) System.out.println("Method overloading is not allowed!");
     }
 }
