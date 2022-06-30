@@ -12,7 +12,7 @@ public class test {
         int m = in.nextInt();
         int max = Integer.MIN_VALUE;
 
-        for(int i = 0; i < n; i++) {
+        for(int i=0; i<n; i++) {
             int input = in.nextInt();
             deque.add(input);
             set.add(input);
