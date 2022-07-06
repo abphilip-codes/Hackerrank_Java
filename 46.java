@@ -6,26 +6,18 @@ import java.text.*;
 import java.math.*;
 import java.util.regex.*;
 
-class Animal {
-	void walk() {
-	    System.out.println("I am walking");
-	}
+class Arithmetic {
+    public int add(int a, int b) { return a + b; }
 }
 
-class Bird extends Animal {
-	void fly() {
-		System.out.println("I am flying");
-	}
-    public void sing() {
-        System.out.println("I am singing");
-    }
+class Adder extends Arithmetic {  
+    public int callAdd(int a, int b) { return add(a, b); }
 }
 
 public class Solution {
-    public static void main(String args[]) {
-	    Bird bird = new Bird();
-	    bird.walk();
-	    bird.fly();
-        bird.sing();
+    public static void main(String []args) {
+        Adder a = new Adder();
+        System.out.println("My superclass is: " + a.getClass().getSuperclass().getName());	
+        System.out.print(a.add(10,32) + " " + a.add(10,3) + " " + a.add(10,10) + "\n");
     }
 }
