@@ -1,4 +1,4 @@
-// https://www.hackerrank.com/challenges//java-abstract-class/problem
+// https://www.hackerrank.com/challenges/java-abstract-class/problem
 
 import java.util.*;
 abstract class Book {
