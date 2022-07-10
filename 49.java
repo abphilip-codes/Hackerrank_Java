@@ -1,4 +1,4 @@
-// https://www.hackerrank.com/challenges/java-interface/problem
+// https://www.hackerrank.com/challenges/java-method-overriding/problem
 
 import java.util.*;
 class Sports {
