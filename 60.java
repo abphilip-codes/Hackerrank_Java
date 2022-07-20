@@ -7,7 +7,6 @@ import java.math.*;
 import java.util.regex.*;
 import java.lang.reflect.*;
 
-
 class Singleton {
     private volatile static Singleton in;
     public static String str;
