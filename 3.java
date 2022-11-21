@@ -1,4 +1,4 @@
-// https://www.hackerrank.com/challenges/java-stdin-and-stdout-1/problem
+// https://www.hackerrank.com/challenges/java-if-else/problem
 
 import java.io.*;
 import java.math.*;

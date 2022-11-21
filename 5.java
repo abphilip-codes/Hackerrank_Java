@@ -1,4 +1,4 @@
-// https://www.hackerrank.com/challenges/java-stdin-stdout/problem
+// https://www.hackerrank.com/challenges/java-output-formatting/problem
 
 import java.util.Scanner;
 

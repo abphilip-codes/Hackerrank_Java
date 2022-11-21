@@ -1,4 +1,4 @@
-// https://www.hackerrank.com/challenges/java-if-else/problem
+// https://www.hackerrank.com/challenges/java-stdin-stdout/problem
 
 import java.util.*;
 
@@ -16,4 +16,3 @@ public class Solution {
         System.out.println("Int: " + i);
     }
 }
-
