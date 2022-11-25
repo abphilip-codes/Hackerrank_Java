@@ -3,7 +3,6 @@
 import java.util.Scanner;
 
 public class Solution {
-
     public static String getSmallestAndLargest(String s, int k) {
         String smallest = "";
         String largest = "";
@@ -22,7 +21,6 @@ public class Solution {
         String s = scan.next();
         int k = scan.nextInt();
         scan.close();
-      
         System.out.println(getSmallestAndLargest(s, k));
     }
 }
