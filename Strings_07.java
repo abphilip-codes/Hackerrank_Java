@@ -8,13 +8,11 @@ public class Solution {
         int c = Integer.parseInt(in.nextLine());
         while(c>0) {
             String p = in.nextLine();
-            try 
-            {
+            try {
                 Pattern.compile(p);
                 System.out.println("Valid");
             } 
-            catch (PatternSyntaxException e) 
-            {
+            catch (PatternSyntaxException e) {
                 System.out.println("Invalid");
             }
             c--;
