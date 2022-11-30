@@ -1,4 +1,4 @@
-// https://www.hackerrank.com/challenges/java-b/problem
+// https://www.hackerrank.com/challenges/java-bitset/problem
 
 import java.io.*;
 import java.util.*;
